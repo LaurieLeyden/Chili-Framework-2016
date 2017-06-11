@@ -40,19 +40,19 @@ private:
 	int PutGraticule(int dx, int dy,int r, int g, int b)
 	{
 		
-		gfx.PutPixel(400 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(395 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(396 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(397 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(403 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(404 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(405 + dx, 300 + dy, r, g, b);
-		gfx.PutPixel(400 + dx, 295 + dy, r, g, b);
-		gfx.PutPixel(400 + dx, 296 + dy, r, g, b);
-		gfx.PutPixel(400 + dx, 297 + dy, r, g, b);
-		gfx.PutPixel(400 + dx, 303 + dy, r, g, b);
-		gfx.PutPixel(400 + dx, 304 + dy, r, g, b);
-		gfx.PutPixel(400 + dx, 305 + dy, r, g, b);
+		gfx.PutPixel(400 +x, 300 + y, r, g, b);
+		gfx.PutPixel(395 +x, 300 + y, r, g, b);
+		gfx.PutPixel(396 +x, 300 + y, r, g, b);
+		gfx.PutPixel(397 +x, 300 + y, r, g, b);
+		gfx.PutPixel(403 +x, 300 + y, r, g, b);
+		gfx.PutPixel(404 +x, 300 + y, r, g, b);
+		gfx.PutPixel(405 +x, 300 + y, r, g, b);
+		gfx.PutPixel(400 +x, 295 + y, r, g, b);
+		gfx.PutPixel(400 +x, 296 + y, r, g, b);
+		gfx.PutPixel(400 +x, 297 + y, r, g, b);
+		gfx.PutPixel(400 +x, 303 + y, r, g, b);
+		gfx.PutPixel(400 +x, 304 + y, r, g, b);
+		gfx.PutPixel(400 +x, 305 + y, r, g, b);
 		return 0;
 	}
 private:
@@ -61,8 +61,8 @@ private:
 	/********************************/
 	/*  User Variables              */
 	/********************************/
-	const int dx = 100;
-	const int dy = 200; //Changed to const after seeing the vidjio. 29/05/2017
+	const int x = 100;
+	const int y = -200; //Changed to const after seeing the vidjio. 29/05/2017
 	const int r = 0;
 	const int g = 120;
 	const int b = 0;

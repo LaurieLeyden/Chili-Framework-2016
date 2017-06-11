@@ -44,7 +44,7 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	
-Game::PutGraticule(dx, dy,r,g,b);
+Game::PutGraticule(x, y,r,g,b);
 	/*
 	Home work...
 	make the reticule go to the bottom left of the screen.
