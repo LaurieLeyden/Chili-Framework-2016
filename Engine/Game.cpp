@@ -48,7 +48,7 @@ Game::PutGraticule(dx, dy,r,g,b);
 	/*
 	Home work...
 	make the reticule go to the bottom left of the screen.
-	done 07/05/2016
+	done 07/05/2016. See game.h game::PutGraticule().
 	*/
 
 }

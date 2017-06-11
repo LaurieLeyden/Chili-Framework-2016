@@ -61,10 +61,10 @@ private:
 	/********************************/
 	/*  User Variables              */
 	/********************************/
-	int dx = -100;
-	int dy = 200;
-	int r = 127;
-	int g = 127;
-	int b = 127;
+	const int dx = 100;
+	const int dy = 200; //Changed to const after seeing the vidjio. 29/05/2017
+	const int r = 0;
+	const int g = 120;
+	const int b = 0;
 
 };
