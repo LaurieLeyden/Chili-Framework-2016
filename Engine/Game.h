@@ -108,8 +108,6 @@ private:
 
 		return 0;
 		}
-
-
 private:
 	MainWindow& wnd;
 	Graphics gfx;
