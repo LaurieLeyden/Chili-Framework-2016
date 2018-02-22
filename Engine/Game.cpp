@@ -45,10 +45,6 @@ void Game::ComposeFrame()
 {
 	
 Game::PutGraticule(x, y,r,g,b);
-	/*
-	Home work...
-	make the reticule go to the bottom left of the screen.
-	done 07/05/2016. See game.h game::PutGraticule().
-	*/
 
+Game::PutSquareGraticule(x, y, r, g, b);//Change the shape of the graticule.
 }

@@ -60,9 +60,8 @@ private:
 		{
 		
 		gfx.PutPixel(x, y, r, g, b);// The centre.
-		//Make the gratiule square man.
-		gfx.PutPixel(x -10,y - 5, r , g, b); 
-		gfx.PutPixel(x - 9, y - 5 ,r, g, b);
+		gfx.PutPixel(x -10,y - 5,r,g,b); 
+		gfx.PutPixel(x - 9, y - 5 , r, g, b);
 		gfx.PutPixel(x - 8, y - 5 , r, g, b);
 		gfx.PutPixel(x - 7, y - 5, r, g, b);
 		gfx.PutPixel(x - 6, y - 5, r, g, b);
