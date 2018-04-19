@@ -101,7 +101,7 @@ private:
 		gfx.PutPixel(x - 10, y - 2, r, g, b);
 		gfx.PutPixel(x - 10, y - 3, r, g, b);
 		gfx.PutPixel(x - 10, y - 4, r, g, b);
-		gfx.PutPixel(x - 10, y - 5, r, g, b);//end of left side
+		gfx.PutPixel(x - 10, y - 5, r, g, b);//end of left side, end of square graticule.
 
 
 
