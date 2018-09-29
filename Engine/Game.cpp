@@ -44,7 +44,9 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	
-Game::PutGraticule(x, y,r,g,b);
+Game::PutGraticule(x, y, r, g, b);
 
 Game::PutSquareGraticule(x, y, r, g, b);//Change the shape of the graticule.
+
+Game::PutPoo();
 }
