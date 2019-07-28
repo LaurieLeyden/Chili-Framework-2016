@@ -33,29 +33,29 @@ public:
 	void Go();
 private:
 	void ComposeFrame();
+
+	
 	void UpdateModel();
 	/********************************/
 	/*  User Functions              */
 	/********************************/
-	int PutGraticule(int x, int y,int r, int g, int b)
+	int PutGraticule(int x, int y, int r, int g, int b)
 	{
-		
-		gfx.PutPixel(400 + x, 300 + y, r, g, b);
-		gfx.PutPixel(395 + x, 300 + y, r, g, b);
-		gfx.PutPixel(396 + x, 300 + y, r, g, b);
-		gfx.PutPixel(397 + x, 300 + y, r, g, b);
-		gfx.PutPixel(403 + x, 300 + y, r, g, b);
-		gfx.PutPixel(404 + x, 300 + y, r, g, b);
-		gfx.PutPixel(405 + x, 300 + y, r, g, b);
-		gfx.PutPixel(400 + x, 295 + y, r, g, b);
-		gfx.PutPixel(400 + x, 296 + y, r, g, b);
-		gfx.PutPixel(400 + x, 297 + y, r, g, b);
-		gfx.PutPixel(400 + x, 303 + y, r, g, b);
-		gfx.PutPixel(400 + x, 304 + y, r, g, b);
-		gfx.PutPixel(400 + x, 305 + y, r, g, b);
-		return 0;
+	gfx.PutPixel(400 + x, 300 + y, r, g, b);
+	gfx.PutPixel(395 + x, 300 + y, r, g, b);
+	gfx.PutPixel(396 + x, 300 + y, r, g, b);
+	gfx.PutPixel(397 + x, 300 + y, r, g, b);
+	gfx.PutPixel(403 + x, 300 + y, r, g, b);
+	gfx.PutPixel(404 + x, 300 + y, r, g, b);
+	gfx.PutPixel(405 + x, 300 + y, r, g, b);
+	gfx.PutPixel(400 + x, 295 + y, r, g, b);
+	gfx.PutPixel(400 + x, 296 + y, r, g, b);
+	gfx.PutPixel(400 + x, 297 + y, r, g, b);
+	gfx.PutPixel(400 + x, 303 + y, r, g, b);
+	gfx.PutPixel(400 + x, 304 + y, r, g, b);
+	gfx.PutPixel(400 + x, 305 + y, r, g, b);
+	return 0;
 	}
-
 	int PutSquareGraticule(int x, int y, int r, int g, int b)
 		{
 		
@@ -104,10 +104,18 @@ private:
 		gfx.PutPixel(x - 10, y - 5, r, g, b);//end of left side, end of square graticule.
 		    	return 0;
 		}
-
+	int PutSquareGraticule2(int x, int y, int r, int g, int b)
+	{
+		for (x <= x + 10; gfx.PutPixel(x, y, r, g, b); ++x);
+		for (y <= y + 10; gfx.PutPixel(x, y, r, g, b); ++y);
+		for (x = x + 10; gfx.PutPixel(x, y, r, g, b); --x);
+		for (y = y + 10; gfx.PutPixel(x, y, r, g, b); --y);
+		return 0;
+	}
+	// this is the turd.
 	int PutPoo()
 	{
-
+		
 		gfx.PutPixel(14 + x, 0 + y, 138, 77, 0);
 		gfx.PutPixel(7 + x, 1 + y, 138, 77, 0);
 		gfx.PutPixel(13 + x, 1 + y, 138, 77, 0);
@@ -341,17 +349,16 @@ private:
 		gfx.PutPixel(6 + x, 23 + y, 51, 28, 0);
 		return 0;
 	}
-
-private:
+	private:
 	MainWindow& wnd;
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
 	/********************************/
-	const int x = 300;
-	const int y = 250; //Changed to const after seeing the vidjio. 29/05/2017
-	const int r = 255;
-	const int g = 255;
-	const int b = 255;
+	int x = 300;
+	int y = 250; 
+	int r = 255;
+	int g = 255;
+	int b = 255;
 
 };
